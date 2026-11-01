@@ -1,0 +1,14 @@
+# 历史版本备份（仅本地保留）
+_backup_v*/
+_backup_*/
+
+# 系统 / 编辑器杂项
+.DS_Store
+Thumbs.db
+desktop.ini
+.idea/
+.vscode/
+*.log
+
+# 智能体工作目录
+.workbuddy/

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>信智工具箱 · 中国科大信息与智能学部</title>
+<meta name="description" content="信息与智能学部 25 级同修专业课所需软件下载与常用网址：左边下载，右边直达，图标齐全。">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- 顶栏 -->
+<header class="topbar">
+  <a class="brand" href="#top">
+    <span class="brand-logo">信</span>
+    <span class="brand-name">信智工具箱<em>USTC · 信息与智能学部</em></span>
+  </a>
+
+  <div class="top-tools">
+    <label class="search search-sm">
+      <button class="search-btn" type="button" aria-label="搜索" title="搜索（Enter）"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.6-3.6"/></svg></button>
+      <input id="q2" type="search" placeholder="搜工具 / 网站，回车搜索" autocomplete="off" aria-label="搜索">
+      <kbd>/</kbd>
+    </label>
+    <button id="theme" class="icon-btn" type="button" aria-label="切换深色模式" title="切换深色模式">🌙</button>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- 首屏 -->
+  <section class="hero">
+    <div class="hero-glow" aria-hidden="true"></div>
+    <h1>25 级同修专业课，工具一站备齐</h1>
+    <p class="hero-sub">先分「正常访问 / 国外网站」两个分区，每个分区里再按课程分类找工具</p>
+
+    <label class="search search-lg">
+      <button class="search-btn" type="button" aria-label="搜索" title="搜索（Enter）"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.6-3.6"/></svg></button>
+      <input id="q" type="search" placeholder="输完按 Enter 或点放大镜搜索，例如 MATLAB / 数电 / 深度学习" autocomplete="off" aria-label="搜索">
+      <kbd>/</kbd>
+    </label>
+
+    <div class="chips" id="chips">
+      <button class="chip" data-q="Python">Python</button>
+      <button class="chip" data-q="MATLAB">MATLAB</button>
+      <button class="chip" data-q="数电">数电</button>
+      <button class="chip" data-q="深度学习">深度学习</button>
+      <button class="chip" data-q="教务">教务</button>
+      <button class="chip" data-q="免费">免费</button>
+    </div>
+
+    <!-- 分类导航：一进来就能看到有哪些分类 -->
+    <nav class="catnav" id="catnav" aria-label="分类导航"></nav>
+  </section>
+
+  <!-- 两个分区：正常访问 / 国外网站 -->
+  <section class="split">
+
+    <div class="panel">
+      <div class="panel-head">
+        <h2><span class="ph-ico" aria-hidden="true">🇨🇳</span>正常访问<span class="count" id="count-domestic">0</span></h2>
+        <p>国内网络直接能打开：软件下载、在线 AI、Agent 工具、学习资源、校内系统</p>
+      </div>
+      <div class="panel-body" id="list-domestic"></div>
+    </div>
+
+    <div class="panel panel-abroad">
+      <div class="panel-head">
+        <h2><span class="ph-ico" aria-hidden="true">🌐</span>国外网站<span class="count" id="count-abroad">0</span></h2>
+        <p>要国际网络环境才能打开，列出来备查；打不开不是链接坏了</p>
+      </div>
+      <div class="panel-body" id="list-abroad"></div>
+    </div>
+
+  </section>
+
+  <p class="empty" id="empty" hidden>没有匹配的条目，换个词试试：Python、数电、MATLAB、教务、AI。</p>
+</main>
+
+<footer class="foot">
+  <p>数据更新 <span id="updated"></span> · 只收录课程会用到的正规渠道，不涉及破解 / 盗版。</p>
+  <p class="tiny">图标取自各站 favicon，取不到时用 emoji 兜底，所以每一格都有图标。标 ? 的是自动抓取受限（多为境外站反爬），不代表链接失效。</p>
+</footer>
+
+<script src="data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
